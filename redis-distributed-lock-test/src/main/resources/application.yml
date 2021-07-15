@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+redisson:
+  lock:
+    server:
+      address: 127.0.0.1:6379
+      type: single
+      password:
+      database: 1
+
+logging:
+  pattern:
+    console: '%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n'
+    file: '%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n'
+  file:
+    name: /Users/promise/dream/redis/redis-distributed-lock-application.properties/redis-lock.log
+  level:
+    com:
+      promise: WARN
